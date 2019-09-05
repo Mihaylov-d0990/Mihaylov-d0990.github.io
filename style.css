@@ -7,13 +7,16 @@ header{
  box-sizing: border-box;
  background-color: #386cab;
  width: 100%;
- height: 50px;
+ height: 100px;
  color: #eeeeee;
  float: left;
+ padding-left: 10px;
 }
       
 article{
  box-sizing: border-box;
+ padding-left: 10px;
+ color: #eeeeee;
  width: 50%;
  height: 700px;
  float: left;
