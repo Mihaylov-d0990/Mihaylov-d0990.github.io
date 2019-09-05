@@ -1,0 +1,24 @@
+*{
+ margin: 0;
+ background-image: url(https://images.wallpaperscraft.ru/image/kauai_ssha_okean_gorizont_nebo_116025_1920x1080.jpg);
+}
+  
+header{
+ box-sizing: border-box;
+ background-color: #386cab;
+ width: 100%;
+ height: 50px;
+ color: #eeeeee;
+ float: left;
+}
+      
+article{
+ box-sizing: border-box;
+ width: 50%;
+ height: 700px;
+ float: left;
+ margin-left: 25%;
+ margin-right: 25%;
+ margin-top: 30px;
+ background-color: #688ebd;
+}
