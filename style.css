@@ -1,38 +1,58 @@
-
-*{
- margin: 0;
-}
-
 body{
- background-image: url(https://images.wallpaperscraft.ru/image/kauai_ssha_okean_gorizont_nebo_116025_1920x1080.jpg);
- background: cover;
-}
-  
-header{
- box-sizing: border-box;
- background-color: #386cab;
- width: 100%;
- height: 100px;
- color: #eeeeee;
- float: left;
- padding: 20px;
-}
-      
-article{
- box-sizing: border-box;
- padding-left: 10px;
- color: #eeeeee;
- width: 50%;
- height: 700px;
- float: left;
- margin-left: 25%;
- margin-right: 25%;
- margin-top: 30px;
- background-color: #688ebd;
+  background-color: #eeeeee;
 }
 
-div{
- float: left;
- background-color: #e88b84;
- margin-left: 3%;
+header{
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.head1{
+  background-color: #faf452;
+  width: 100%;
+  height: 40px;
+  color: #14140e;
+}
+
+.head2{
+  background-color: #14140e;
+  width: 100%;
+  height: 40px;
+  color: #dedede;
+}
+
+h1, h2{
+  margin-top: 0;
+  margin-left: 40px;
+}
+
+article{
+  margin-top: 25px;
+  width: 100%;
+  height: minmax(560px, auto);
+  background-color: #fffc9e;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+}
+
+article .gridBlock{
+  background-color: #faf452;
+  box-sizing: border-box;
+  border: 1px solid #14140e;
+  text-align: center;
+  height: 250px;
+}
+
+.image{
+  height: 100px;
+  width: 100px;
+  border: 1px dashed black;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: float;
 }
