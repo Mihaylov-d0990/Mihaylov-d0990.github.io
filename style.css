@@ -65,5 +65,5 @@ h1, h2{
 
 .block1 .image{
   background-image: url(https://img.icons8.com/color/452/html-5.png);
-  width: 100%;
+  background-size: 100% 100%;
 }
