@@ -57,7 +57,7 @@ article .gridBlock{
   float: left;
 }
 
-.gridBlock:nth-child(2){
+.gridContent{
   float: left;
   text-align: left;
   padding: 20px;
