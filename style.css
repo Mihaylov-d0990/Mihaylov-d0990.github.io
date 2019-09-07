@@ -42,7 +42,6 @@ h1, h2{
 .contentArticle .gridBlock{
   background-color: #faf452;
   box-sizing: border-box;
-  border: 1px solid #14140e;
   text-align: center;
   height: 250px;
 }
