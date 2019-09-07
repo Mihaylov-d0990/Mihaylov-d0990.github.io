@@ -56,3 +56,7 @@ article .gridBlock{
   margin-left: 10px;
   display: float;
 }
+
+.gridBlock p{
+  display: float;
+}
