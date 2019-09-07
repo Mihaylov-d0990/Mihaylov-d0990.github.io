@@ -60,5 +60,5 @@ article .gridBlock{
 .gridContent{
   float: left;
   text-align: left;
-  padding: 20px;
+  padding-left: 20px;
 }
