@@ -28,7 +28,7 @@ h1, h2{
   margin-left: 40px;
 }
 
-article{
+.contentArticle{
   margin-top: 25px;
   width: 100%;
   height: minmax(560px, auto);
@@ -39,7 +39,7 @@ article{
   grid-gap: 20px;
 }
 
-article .gridBlock{
+.contentArticle .gridBlock{
   background-color: #faf452;
   box-sizing: border-box;
   border: 1px solid #14140e;
@@ -63,6 +63,6 @@ article .gridBlock{
   padding-left: 20px;
 }
 
-.block1 image{
+.block1 .image{
   background-image: url(https://img.icons8.com/color/452/html-5.png);
 }
