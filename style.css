@@ -28,6 +28,14 @@ h1, h2{
   margin-left: 40px;
 }
 
+.contentTable{
+  margin-top: 25px;
+  width: 100%;
+  height: minmax(560px, auto);
+  background-color: #fffc9e;
+  float: left;
+}
+
 .contentArticle{
   margin-top: 25px;
   width: 100%;
