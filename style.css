@@ -67,3 +67,18 @@ h1, h2{
   background-image: url(https://img.icons8.com/color/452/html-5.png);
   background-size: 100% 100%;
 }
+
+.block2 .image{
+  background-image: url(http://s1.iconbird.com/ico/2013/6/289/w512h5121371656117css.png);
+  background-size: 100% 100%;
+}
+
+.block3 .image{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png);
+  background-size: 100% 100%;
+}
+
+.block4 .image{
+  background-image: url(http://www.pngmart.com/files/7/PHP-PNG-File.png);
+  background-size: 100% 100%;
+}
