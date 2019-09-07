@@ -62,3 +62,7 @@ article .gridBlock{
   text-align: left;
   padding-left: 20px;
 }
+
+.block1 image{
+  background-image: url(https://img.icons8.com/color/452/html-5.png);
+}
