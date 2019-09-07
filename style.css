@@ -57,6 +57,7 @@ article .gridBlock{
   float: left;
 }
 
-.gridBlock p{
+.gridBlock:nth-child(2){
   float: left;
+  
 }
