@@ -89,6 +89,14 @@ h1, h2{
   background-size: 100% 100%;
 }
 
-th, td{
+table{
+  border-collapse: collapse;
+}
+
+td{
   border: 1px solid black;
+}
+
+td .hol{
+  background-color: red;
 }
