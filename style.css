@@ -54,9 +54,9 @@ article .gridBlock{
   box-sizing: border-box;
   margin-top: 10px;
   margin-left: 10px;
-  display: float;
+  float: left;
 }
 
 .gridBlock p{
-  display: float;
+  float: left;
 }
