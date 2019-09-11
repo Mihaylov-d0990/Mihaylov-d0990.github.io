@@ -31,7 +31,7 @@ h1, h2{
 .contentTable{
   margin-top: 25px;
   width: 100%;
-  height: minmax(560px, auto);
+  min-height: 500px;
   background-color: #fffc9e;
   float: left;
 }
@@ -91,14 +91,41 @@ h1, h2{
 
 table{
   border-collapse: collapse;
+  margin: 100px auto;
+}
+
+tr{
+    background-color: #EEEEEE;
+    height: 20px;
 }
 
 td{
   border: 3px solid black;
   padding: 10px;
   text-align: center;
+  width: 20px;
+  height: 20px;
 }
 
-td .hol{
+.hol{
   background-color: red;
 }
+
+.next-month{
+    background-color: #96efff;
+}
+
+.work-day{
+    background-color: #04ff00;
+}
+
+.visibility{
+    border: 3px solid #fffc9e;
+    background-color: #fffc9e;
+    border-right: 3px solid black;
+}
+
+.check{
+    width: 300px;
+}
+
