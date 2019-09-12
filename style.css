@@ -46,17 +46,17 @@ h1, h2{
   grid-gap: 20px;
 }
 
-.contentArticle .gridBlock{
+.gridBlock{
   background-color: #faf452;
   box-sizing: border-box;
   text-align: center;
   height: 250px;
 }
 
-.contentArticle .gridBlock .center-block{
-  matgin: 50px auto;
-  width: auto;
-  height: auto;
+.center-block{
+  margin: 50px auto;
+  height: 100px;
+  width: 300px;
 }
 
 .image{
@@ -71,6 +71,7 @@ h1, h2{
 .gridContent{
   float: left;
   padding-left: 20px;
+  font-weight: bold;
 }
 
 .block1 .image{
@@ -132,4 +133,5 @@ td{
 .check{
     width: 300px;
 }
+
 
