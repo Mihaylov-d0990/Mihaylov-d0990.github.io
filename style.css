@@ -52,6 +52,8 @@ h1, h2{
   box-sizing: border-box;
   text-align: center;
   height: 250px;
+  padding-left: 100px;
+  padding-top: 50px;
 }
 
 .image{
@@ -66,7 +68,6 @@ h1, h2{
 .gridContent{
   float: left;
   padding-left: 20px;
-  align-content: center;
 }
 
 .block1 .image{
