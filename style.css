@@ -55,6 +55,8 @@ h1, h2{
 
 .contentArticle .gridBlock .center-block{
   matgin: 50px auto;
+  width: auto;
+  height: auto;
 }
 
 .image{
