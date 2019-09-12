@@ -41,7 +41,6 @@ h1, h2{
   width: 100%;
   height: minmax(560px, auto);
   background-color: #fffc9e;
-  float: left;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: 20px;
@@ -61,7 +60,6 @@ h1, h2{
   box-sizing: border-box;
   margin-top: 10px;
   margin-left: 10px;
-  float: left;
 }
 
 .gridContent{
