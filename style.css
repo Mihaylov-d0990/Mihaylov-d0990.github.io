@@ -51,7 +51,10 @@ h1, h2{
   box-sizing: border-box;
   text-align: center;
   height: 250px;
-  margin: 50px auto;
+}
+
+.contentArticle .gridBlock .center-block{
+  matgin: 50px auto;
 }
 
 .image{
