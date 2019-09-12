@@ -54,12 +54,17 @@ h1, h2{
   padding: 0 auto;
 }
 
+.contentArticle .gridBlock .center-block{
+  margin: 0 auto;
+}
+
 .image{
   height: 100px;
   width: 100px;
   box-sizing: border-box;
   margin-top: 10px;
   margin-left: 10px;
+  float: left;
 }
 
 .gridContent{
