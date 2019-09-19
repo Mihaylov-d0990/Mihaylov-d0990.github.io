@@ -138,4 +138,8 @@ td{
   height: 0px;
 }
 
+.board .board-vertical{
+  width: 0px;
+}
+
 
