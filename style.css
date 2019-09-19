@@ -134,12 +134,8 @@ td{
     width: 300px;
 }
 
-.board-gorizontal{
-  height: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.board .board-gorizontal{
+  height: 0px;
 }
 
 
