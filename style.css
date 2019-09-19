@@ -106,10 +106,10 @@ tr{
 
 td{
   border: 3px solid black;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   width: 20px;
-  height: 5px;
+  height: 20px;
 }
 
 .hol{
@@ -135,7 +135,11 @@ td{
 }
 
 .board-gorizontal{
-  height: 10px;
+  height: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
