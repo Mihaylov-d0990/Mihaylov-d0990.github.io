@@ -148,3 +148,7 @@ td{
 .board .board-gorizontal{
   height: 0px;
 }
+
+.board .board-vertical{
+  width: 0px;
+}
