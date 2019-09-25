@@ -145,13 +145,22 @@ td{
 }
 
 .board .board-gorizontal{
-  height: 0px;
+  height: 15px;
 }
 
 .board .board-vertical{
-  width: 0px;
+  width: 15px;
 }
 
 .board .black-case{
-  background-color: #000000;
+  background-color: pink;
+}
+
+.board .deg-180{
+    transform: rotate(180deg);
+}
+
+.board img{
+    width: 30px;
+    height: 30px;
 }
