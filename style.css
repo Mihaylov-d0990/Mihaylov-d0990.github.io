@@ -164,3 +164,40 @@ td{
     width: 30px;
     height: 30px;
 }
+
+.map-check{
+    margin-top: 25px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #fffc9e;
+    float: left;
+}
+
+.map-check img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.map-check ol .border-uzbek{
+    border: 5px dashed #d3d3d3;
+    background-color: pink;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.border-uzbek h2{
+    margin-left: 0px;
+    font-size: 42px;
+}
+
+.border-uzbek p{
+    margin-left: 0px;
+    font-size: 36px;
+}
+
+.border-uzbek h1{
+    margin-left: 0px;
+    font-size: 56px;
+}
