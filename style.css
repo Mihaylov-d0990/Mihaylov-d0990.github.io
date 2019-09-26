@@ -246,13 +246,13 @@ td{
 }
 
 .paragraph-check .paragraph-block .paragraph-one:hover{
-    background-color: none;
+    background-color: purple;
 }
 
 .paragraph-check .paragraph-block .paragraph-two:hover{
-    background-color: none;
+    background-color: purple;
 }
 
 .paragraph-check .paragraph-block .paragraph-three:hover{
-    background-color: none;
+    background-color: purple;
 }
