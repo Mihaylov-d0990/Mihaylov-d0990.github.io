@@ -211,4 +211,10 @@ td{
     width: 100%;
     min-height: 500px;
     background-color: #fffc9e;
+    float: left;
 }
+
+.paragraph-check .paragraph-block{
+    margin-top: 25px;
+}
+
