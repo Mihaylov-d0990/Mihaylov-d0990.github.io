@@ -244,3 +244,15 @@ td{
   text-indent: 20px;
   line-height: 17px;
 }
+
+.paragraph-check .paragraph-block .paragraph-one:hover{
+    background-color: none;
+}
+
+.paragraph-check .paragraph-block .paragraph-two:hover{
+    background-color: none;
+}
+
+.paragraph-check .paragraph-block .paragraph-three:hover{
+    background-color: none;
+}
