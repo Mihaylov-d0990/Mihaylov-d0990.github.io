@@ -205,3 +205,10 @@ td{
 .border-uzbek ul li{
   list-style: none;
 }
+
+.paragraph-check{
+    margin-top: 25px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #fffc9e;
+}
