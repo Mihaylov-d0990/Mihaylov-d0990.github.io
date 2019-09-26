@@ -226,3 +226,21 @@ td{
   text-indent: 20px;
   line-height: 27px;
 }
+
+.paragraph-check .paragraph-block .paragraph-two{
+  background-color: black;
+  font-family: fantasy;
+  font-size: 16px;
+  color: white;
+  text-indent: 20px;
+  line-height: 21px;
+}
+
+.paragraph-check .paragraph-block .paragraph-three{
+  background-color: white;
+  font-family: monospace;
+  font-size: 12px;
+  color: black;
+  text-indent: 20px;
+  line-height: 17px;
+}
