@@ -256,7 +256,7 @@ td{
 
 .content-chest{
   width: 100%;
-  height: minmax(560px, auto);
+  min-height: 560px;
   background-color: #fffc9e;
   float: left;
 }
