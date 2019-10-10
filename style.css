@@ -37,7 +37,7 @@ h1, h2{
 }
 
 .contentArticle{
-  margin-top: 25px;
+  margin-top: 100px;
   width: 100%;
   height: minmax(560px, auto);
   background-color: #fffc9e;
