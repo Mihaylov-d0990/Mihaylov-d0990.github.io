@@ -7,6 +7,7 @@ header{
   height: 80px;
   box-sizing: border-box;
   float: left;
+  margin-bottom: 25px;
 }
 
 .head1{
@@ -29,7 +30,6 @@ h1, h2{
 }
 
 .contentTable{
-  margin-top: 25px;
   width: 100%;
   min-height: 500px;
   background-color: #fffc9e;
@@ -37,7 +37,6 @@ h1, h2{
 }
 
 .contentArticle{
-  margin: 50px auto;
   width: 100%;
   height: minmax(560px, auto);
   background-color: #fffc9e;
