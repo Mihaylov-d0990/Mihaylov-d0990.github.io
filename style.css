@@ -253,3 +253,9 @@ td{
 .paragraph-check .paragraph-block .paragraph-three:hover{
     background-color: purple;
 }
+
+.content-chest{
+  width: 100%;
+  height: minmax(560px, auto);
+  background-color: #fffc9e;
+}
