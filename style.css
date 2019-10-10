@@ -255,7 +255,7 @@ td{
 }
 
 .content-chest{
-  width: 100%;
+  width: 50%;
   height: minmax(560px, auto);
   background-color: #fffc9e;
 }
