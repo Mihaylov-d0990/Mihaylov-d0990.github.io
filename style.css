@@ -274,3 +274,27 @@ td{
   height: 100%;
   float: left;
 }
+
+
+.all-chests .chest-area .click-box{
+  float: left;
+  height: 10%;
+}
+
+.all-chests .chest-area .gift-box{
+  float: left;
+  height: 90%;
+}
+
+.all-chests .chest-area #gift1{
+  background-color: blue;
+}
+
+.all-chests .chest-area #gift2{
+  background-color: yellow;
+}
+
+
+.all-chests .chest-area #gift3{
+  background-color: pink;
+}
