@@ -284,8 +284,21 @@ td{
   font-size: 30px;
 }
 
-.all-chests .chest-area .click-box a{
+.all-chests .chest-area a{
   background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.all-chests .chest-area a:link{
+  color: black;
+}
+
+.all-chests .chest-area a:visited{
+  color: black;
+}
+
+.all-chests .chest-area a:hover{
   color: black;
 }
 
