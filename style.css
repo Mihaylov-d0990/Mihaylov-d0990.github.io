@@ -289,14 +289,28 @@ td{
 }
 
 .all-chests .chest-area #gift1{
+  display: none;
+}
+
+.all-chests .chest-area #gift1:target{
   background-color: blue;
+  display: block;
 }
 
 .all-chests .chest-area #gift2{
-  background-color: yellow;
+  display: none;
 }
 
+.all-chests .chest-area #gift2:target{
+  background-color: yellow;
+  display: block;
+}
 
 .all-chests .chest-area #gift3{
+  display: none;
+}
+
+.all-chests .chest-area #gift3:target{
   background-color: pink;
+  display: block;
 }
