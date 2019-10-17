@@ -279,11 +279,13 @@ td{
 .all-chests .chest-area .click-box{
   float: left;
   height: 10%;
+  width: 100%;
 }
 
 .all-chests .chest-area .gift-box{
   float: left;
   height: 90%;
+  width: 100%;
 }
 
 .all-chests .chest-area #gift1{
