@@ -260,3 +260,9 @@ td{
   background-color: #fffc9e;
   float: left;
 }
+
+.all-chests{
+  background-color: red;
+  width: 100%;
+  height: 820px;
+}
