@@ -284,6 +284,11 @@ td{
   font-size: 30px;
 }
 
+.all-chests .chest-area .click-box a{
+  background-color: white;
+  color: black;
+}
+
 .all-chests .chest-area .gift-box{
   float: left;
   height: 90%;
