@@ -270,4 +270,6 @@ td{
 .all-chests .chest-area{
   box-sizing: border-box;
   border: 2px solid black;
+  width: 33.333%;
+  height: 100%;
 }
