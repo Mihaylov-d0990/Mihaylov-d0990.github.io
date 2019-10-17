@@ -262,14 +262,12 @@ td{
 }
 
 .all-chests{
-  background-color: red;
   width: 100%;
   height: 820px;
 }
 
 .all-chests .chest-area{
   box-sizing: border-box;
-  border: 2px solid black;
   width: 33.333%;
   height: 100%;
   float: left;
@@ -285,21 +283,26 @@ td{
 }
 
 .all-chests .chest-area a{
-  background-color: white;
-  color: black;
+  background-color: #14140e;
+  color: #dedede;
   text-decoration: none;
 }
 
+.all-chests .chest-area .click-box {
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
 .all-chests .chest-area a:link{
-  color: black;
+  color: #dedede;
 }
 
 .all-chests .chest-area a:visited{
-  color: black;
+  color: #dedede;
 }
 
 .all-chests .chest-area a:hover{
-  color: black;
+  color: #dedede;
 }
 
 .all-chests .chest-area .gift-box{
@@ -310,17 +313,68 @@ td{
   font-size: 30px;
 }
 
+.all-chests .chest-area .gift-box .grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.all-chests .chest-area .gift-box .close{
+    margin-top: 20px;
+}
+
 .all-chests .chest-area .gift-box p{
   background-color: black;
   color: white;
   font-size: 20px;
 }
 
+.all-chests .chest-area .gift-box .fake p{
+    background-color: inherit;
+    color: black;
+    font-size: 30px;
+}
+
+.all-chests .chest-area .gift-box .fake p::first-line{
+    color: blue;
+}
+
+.all-chests .chest-area .gift-box .fake p::{
+    color: blue;
+}
+
+.all-chests .chest-area .gift-box .fake p:first-letter{
+    color: blue;
+    font-family: inherit;
+    font-style: normal;
+    font-size: 30px;
+}
+
 .all-chests .chest-area .gift-box p:first-letter{
   color: purple;
-  font-size: 25px;
+  font-size: 35px;
   font-family: Snell Roundhand, cursive;
   font-style: italic;
+}
+
+.all-chests .chest-area .gift-box .image{
+    height: 400px;
+    width: 400px;
+}
+
+.all-chests .chest-area .gift-box table tr:nth-child(2n){
+    background-color: black;
+    color: white;
+}
+
+.all-chests .chest-area .gift-box table tr:nth-child(2n) td{
+    border-color: white;
+}
+
+.all-chests .chest-area .gift-box .image img{
+    height: 400px;
+    width: 400px;
 }
 
 .all-chests .chest-area #gift1{
@@ -328,7 +382,7 @@ td{
 }
 
 .all-chests .chest-area #gift1:target{
-  background-color: blue;
+  background-color: #FFAED5;
   display: block;
 }
 
@@ -337,7 +391,7 @@ td{
 }
 
 .all-chests .chest-area #gift2:target{
-  background-color: yellow;
+  background-color: #FFAED5;
   display: block;
 }
 
@@ -346,6 +400,6 @@ td{
 }
 
 .all-chests .chest-area #gift3:target{
-  background-color: pink;
+  background-color: #FFAED5;
   display: block;
 }
