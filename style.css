@@ -310,6 +310,18 @@ td{
   font-size: 30px;
 }
 
+.all-chests .chest-area .gift-box p{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.all-chests .chest-area .gift-box p:first-letter{
+  color: purple;
+  font-size: 25px;
+  font-family: Impact;
+}
+
 .all-chests .chest-area #gift1{
   display: none;
 }
