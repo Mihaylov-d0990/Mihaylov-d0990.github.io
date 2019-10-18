@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="designed_by_Mikhaylov's">
+        <link rel="stylesheet" href="theme/white_theme.css">
+        <title>White theme</title>
+    </head>
+    <body>
+        <div class="border-box">
+            <div class="main-box">
+                <div class="turquoise-box">
+                    <h3>Содержание</h3>
+                    <ol>
+                        <li>
+                            <span class="bold">
+                                Основы HTML
+                            </span>
+                        </li>
+                        <li>
+                            <span class="bold">
+                                Структура HTML-документа
+                            </span>
+                            <ul>
+                                <li>Элемент &lt;html&gt;<html></li>
+                                <li>Элемент &lt;head&gt;</li>
+                                <li>Элемент &lt;title&gt;</li>
+                                <li>Элемент &lt;meta&gt;</li>
+                                <li>Элемент &lt;style&gt;</li>
+                                <li>Элемент &lt;link&gt;</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <h3>Основы HTML</h3>
+                <div class="header-img">
+                    <img src="pic/html_pic.png" alt="">
+                </div>
+                <p><span class="bold">Основы HTML</span>
+                    содержат основные правила языка HTML, описание
+                    структуры HTML-страницы, отношения в структуре HTML-документа
+                    между HTML-элементами.
+                </p>
+                <p>HTML-документ — это обычный текстовый документ, может быть
+                    создан как в обычном текстовом редакторе <span class="bold">(Блокнот)</span>, так и в
+                    специализированном, с подсветкой кода <span class="bold">(Notepad++, Visual Studio Code
+                    и т.п.)</span>. HTML-документ имеет расширение <span class="boow">.html.</span>
+                </p>
+                <p>
+                    HTML-документ состоит из дерева HTML-элементов и текста. Каждый
+                    элемент обозначается в исходном документе начальным (открывающим) и конечным (закрывающим)
+                    тегом (за редким исключением).
+                </p>
+                <p>
+                    <span class="bold">Начальный тег</span> показывает, где начинается элемент, конечный — где заканчивается.
+                    <span class="bold">Закрывающий тег</span> образуется путем добавления слэша <span class="boow">/</span> перед именем тега: <span class="boow">&lt;имя тега&gt;</span> … <span class="boow">&lt;/имя
+                    тега&gt;</span>. Между начальным и закрывающим тегами находится содержимое тега — контент.
+                </p>
+                <p>
+                    Одиночные теги не могут хранить в себе содержимого напрямую, оно прописывается как значение
+                    атрибута, например, тег <span class="boow">&lt;input type="button" value="Кнопка"&gt;</span> создаст кнопку с текстом <span class="bold">Кнопка</span> внутри.
+                </p>
+                <p>
+                    Теги могут вкладываться друг в друга, например, <span class="boow">&lt;p&gt;&lt;i&gt;Текст&lt;/i&gt;&lt;/p&gt;</span>. При вложении следует
+                    соблюдать порядок их закрытия <span class="bold">(принцип «матрёшки»)</span>, например, следующая запись будет
+                    неверной: <span class="boow">&lt;p&gt;&lt;i&gt;Текст&lt;/p&gt;&lt;/i&gt;</span>.
+                </p>
+                <p>
+                    HTML-элементы могут иметь атрибуты (глобальные, применяемые для всех HTML-элементов, и
+                    собственные). Атрибуты прописываются в открывающем теге элемента и содержат имя и значение,
+                    указываемые в формате <span class="boow">имя атрибута="значение"</span>. Атрибуты позволяют изменять свойства и поведение
+                    элемента, для которого они заданы.
+                </p>
+                <p>
+                    Каждому элементу можно присвоить несколько значений <span class="boow">class</span> и только одно значение <span class="boow">id</span>.
+                    Множественные значения <span class="boow">class</span> записываются через пробел, <span class="boow">&lt;div class="nav top"&gt;</span>. Значения <span class="boow">class</span> и <span class="boow">id</span>
+                    должны состоять только из букв, цифр, дефисов и нижних подчеркиваний и должны начинаться только
+                    с букв или цифр.
+                </p>
+                <p>
+                    Браузер просматривает (интерпретирует) HTML-документ, выстраивая его структуру (DOM) и
+                    отображая ее в соответствии с инструкциями, включенными в этот файл (таблицы стилей, скрипты).
+                    Если разметка правильная, то в окне браузера будет отображена HTML-страница, содержащая HTMLэлементы — заголовки, таблицы, изображения и т.д.
+                </p>
+                <p>
+                    Процесс интерпретации <span class="bold">(парсинг)</span> начинается прежде, чем веб-страница полностью загружена в
+                    браузер. Браузеры обрабатывают HTML-документы последовательно, с самого начала, при этом
+                    обрабатывая CSS и соотнося таблицы стилей с элементами страницы.
+                </p>
+                <p>
+                    HTML-документ состоит из двух разделов — заголовка — между тегами <span class="boow">&lt;head&gt;</span>…<span class="boow">&lt;/head&gt;</span> и
+                    содержательной части — между тегами <span class="boow">&lt;body&gt;</span>…<span class="boow">&lt;/body&gt;</span>.
+                </p>
+                <h3>Структура HTML-документа</h3>
+                <p>
+                    Язык HTML следует правилам, которые содержатся в файле объявления типа документа
+                    <span class="bold">(Document Type Definition, или DTD)</span>. DTD представляет собой XML-документ, определяющий,
+                    какие теги, атрибуты и их значения действительны для конкретного типа HTML. Для каждой версии
+                    HTML есть свой DTD.
+                </p>
+                <p>
+                    <span class="bold">DOCTYPE</span> отвечает за корректное отображение веб-страницы браузером. DOCTYPE определяет не
+                    только версию HTML (например, html), но и соответствующий DTD-файл в Интернете.
+                </p>
+                <div class="yellow-box">
+                    <p>
+                        &lt;!DOCTYPE html&gt; <span class="green">&lt;!-- Объявление формата документа --&gt;</span><br>
+                        &lt;<span class="blue">html</span>&gt;<br>
+                        &lt;<span class="blue">head</span>&gt; <span class="green">&lt;!-- Техническая информация о документе --&gt;</span><br>
+                        &lt;<span class="blue">meta</span> <span class="red">charset</span>="UTF-8"&gt; <span class="green">&lt;!-- Определяем кодировку символов документа --&gt;</span><br>
+                        &lt;<span class="blue">title</span>&gt;...&lt;<span class="blue">/title</span>&gt; <span class="green">&lt;!-- Задаем заголовок документа --&gt;</span><br>
+                        &lt;<span class="blue">link</span> <span class="red">rel</span>=<span class="purple">"stylesheet"</span> <span class="red">type</span>=<span class="purple">"text/css"</span> <span class="red">href</span>=<span class="purple">"style.css"</span>
+                        &gt; <span class="green">&lt;!-- Подключаем внешнюю таблицу стилей --&gt;</span><br>
+                        &lt;<span class="blue">script</span> <span class="red">src</span>=<span class="purple">"script.js"</span>&gt;&lt;<span class="blue">/script</span>&gt; <span class="green">&lt;!-- Подключаем сценарии --&gt;</span><br>
+                        &lt;<span class="blue">/head</span>&gt;<br>
+                        &lt;<span class="blue">body</span>&gt; <span class="green">&lt;!-- Основная часть документа --&gt;</span><br>
+                        &lt;<span class="blue">/body</span>&gt;<br>
+                        &lt;<span class="blue">/html</span>&gt;<br>
+                    </p>
+                </div>
+                <p>
+                    Элементы, находящиеся внутри тега <span class="boow">&lt;html&gt;</span>, образуют дерево документа, так называемую
+                    <span class="bold">объектную модель документа, DOM (document object model)</span>. При этом элемент <span class="boow">&lt;html&gt;</span>
+                    является корневым элементом.
+                </p>
+                <div class="struct-img">
+                    <img src="pic/DOM.png" alt="">
+                </div>
+                <p class="paragraph-center">РИС. 1. ПРОСТЕЙШАЯ СТРУКТУРА ВЕБ-СТРАНИЦЫ</p>
+                <p>
+                    Чтобы разобраться во взаимодействии элементов веб-страницы, необходимо рассмотреть так
+                    называемые <span class="bold">«родственные отношения»</span> между элементами. Отношения между множественными
+                    вложенными элементами подразделяются на родительские, дочерние и сестринские.
+                </p>
+                <p>
+                    <span class="bold">Предок</span> — элемент, который заключает в себе другие элементы. На рисунке 1 предком для всех
+                    элементов является <span class="boow">&lt;html&gt;</span>. В то же время элемент <span class="boow">&lt;body&gt;</span> является предком для всех содержащихся в
+                    нем тегов: <span class="boow">&lt;h1&gt;</span>, <span class="boow">&lt;p&gt;</span>, <span class="boow">&lt;span&gt;</span>, <span class="boow">&lt;nav&gt;</span> и т.д.
+                </p>
+                <p>
+                    <span class="bold">Потомок</span> — элемент, расположенный внутри одного или более типов элементов. Например,
+                    <span class="boow">&lt;body&gt;</span> является потомком <span class="boow">&lt;html&gt;</span>, а элемент <span class="boow">&lt;p&gt;</span> является потомком одновременно для <span class="boow">&lt;body&gt;</span> и
+                    <span class="boow">&lt;html&gt;</span>.
+                </p>
+                <p>
+                    <span class="bold">Родительский элемент</span> — элемент, связанный с другими элементами более низкого уровня, и
+                    находящийся на дереве выше их. На рисунке 1 <span class="boow">&lt;html&gt;</span> является родительским только для <span class="boow">&lt;head&gt;</span> и
+                    <span class="boow">&lt;body&gt;</span>. Тег <span class="boow">&lt;p&gt;</span> является родительским только для <span class="boow">&lt;span&gt;</span>.
+                </p>
+                <p>
+                    <span class="bold">Дочерний элемент</span> — элемент, непосредственно подчиненный другому элементу более высокого
+                    уровня. На рисунке 1 только элементы <span class="boow">&lt;h1&gt;</span>, <span class="boow">&lt;h2&gt;</span>, <span class="boow">&lt;p&gt;</span> и <span class="boow">&lt;nav&gt;</span> являются дочерними по отношению к
+                    <span class="boow">&lt;body&gt;</span>.
+                </p>
+                <p>
+                    <span class="bold">Сестринский элемент</span> — элемент, имеющий общий родительский элемент с рассматриваемым,
+                    так называемые элементы одного уровня. На рисунке 1 <span class="boow">&lt;head&gt;</span> и <span class="boow">&lt;body&gt;</span> — элементы одного уровня, так
+                    же как и элементы <span class="boow">&lt;h1&gt;</span>, <span class="boow">&lt;h2&gt;</span> и <span class="boow">&lt;p&gt;</span> являются между собой сестринскими.
+                </p>
+                <ol>
+                    <li>
+                        <h3>Элемент &lt;html&gt;</h3>
+                        <p>
+                            Является корневым элементом документа. Все остальные элементы содержатся внутри тегов
+                            <span class="boow">&lt;html&gt;</span>...<span class="boow">&lt;/html&gt;</span>. Все, что находится за пределами тегов, не воспринимается браузером как код
+                            HTML и никак им не обрабатывается. Для элемента доступны атрибуты manifest и xmlns , а также
+                            глобальные атрибуты.
+                        </p>
+                        <table>
+                            <caption>ТАБЛИЦА 1. АТРИБУТЫ ТЕГА &lt;HTML&gt;</caption>
+                            <tr>
+                                <th>Атрибут</th>
+                                <th>Описание, принимаемое значение</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">manifest</span>
+                                </td>
+                                <td>
+                                    С помощью значения атрибута указывается путь к документу кэша манифеста,
+                                    например: <span class="boow">&lt;html manifest="about_company.appcache"&gt;</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>Элемент &lt;head&gt;</h3>
+                        <p>
+                            Раздел <span class="boow">&lt;head&gt;</span>...<span class="boow">&lt;/head&gt;</span> содержит техническую информацию о странице: заголовок,
+                            описание, ключевые слова для поисковых машин, кодировку и т.д. Введенная в нем информация не
+                            отображается в окне браузера, однако содержит данные, которые указывают браузеру, как следует
+                            обрабатывать страницу.
+                        </p>
+                        <p>
+                            Для элемента доступны глобальные атрибуты.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Элемент &lt;title&gt;</h3>
+                        <p>
+                            Обязательным тегом раздела <span class="boow">&lt;head&gt;</span> является тег <span class="boow">&lt;title&gt;</span>. Текст, размещенный внутри этого
+                            тега, отображается в строке заголовка веб-браузера. Длина заголовка должна быть не более 60
+                            символов, чтобы полностью поместиться в заголовке. Текст заголовка должен содержать
+                            максимально полное описание содержимого веб-страницы.
+                        </p>
+                        <p>
+                            Для элемента доступны глобальные атрибуты.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Элемент &lt;meta&gt;</h3>
+                        <p>
+                            Необязательным тегом раздела <span class="boow">&lt;head&gt;</span> является одинарный тег <span class="boow">&lt;meta&gt;</span>. С его помощью
+                            можно задать описание содержимого страницы и ключевые слова для поисковых машин, автора
+                            HTML-документа и прочие свойства метаданных. Элемент <span class="boow">&lt;head&gt;</span> может содержать несколько
+                            элементов <span class="boow">&lt;meta&gt;</span>, потому что в зависимости от используемых атрибутов они несут различную
+                            информацию.
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"description"</span> <span class="red">content</span>=<span class="purple">"Описание содержимого страницы"</span>&gt;<br>
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"keywords"</span> <span class="red">content</span>=<span class="purple">"Ключевые слова через запятую"</span>&gt;
+                        </div>
+                        <p>
+                            Описание содержимого страницы и ключевые слова одновременно можно указывать на
+                            нескольких языках, например, на русском и английском:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"description"</span> <span class="red">lang</span>=<span class="purple">"ru"</span> <span class="red">content</span>=<span class="purple">"Описание содержимого страницы"</span>&gt;<br>
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"description"</span> <span class="red">lang</span>=<span class="purple">"en"</span> <span class="red">content</span>=<span class="purple">"Description"</span>&gt;<br>
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"keywords"</span> <span class="red">lang</span>=<span class="purple">"ru"</span> <span class="red">content</span>=<span class="purple">"Ключевые слова через запятую"</span>&gt;<br>
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"keywords"</span> <span class="red">lang</span>=<span class="purple">"en"</span> <span class="red">content</span>=<span class="purple">"Keywords"</span>&gt;<br>
+                        </div>
+                        <p>
+                            С помощью тега <span class="boow">&lt;meta&gt;</span> можно запретить или разрешить индексацию веб-страницы
+                            поисковыми машинами:
+                        </p>
+                        <p>
+                            Индексация и переход по ссылкам разрешены:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"robots"</span> <span class="red">content</span>=<span class="purple">"index, follow"</span>&gt;
+                        </div>
+                        <p>
+                            Индексация и переход по ссылкам запрещены:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">name</span>=<span class="purple">"robots"</span> <span class="red">content</span>=<span class="purple">"noindex, nofollow"</span>&gt;
+                        </div>
+                        <p>
+                            Для автоматической перезагрузки страницы через заданный промежуток времени нужно
+                            воспользоваться значением <span class="boow">refresh</span>:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">http-equiv</span>=<span class="purple">"refresh"</span> <span class="red">content</span>=<span class="purple">"30"</span>&gt;
+                        </div>
+                        <p>
+                            Страница будет перезагружена через 30 секунд. Чтобы перебросить посетителя на другую
+                            страницу, нужно указать URL-адрес в параметре <span class="boow">url</span>:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">meta</span> <span class="red">http-equiv</span>=<span class="purple">"refresh"</span> <span class="red">content</span>=<span class="purple">"0"</span> <span class="red">url</span>=<span class="purple"></span>&gt;
+                        </div>
+                        <p>
+                            Для элемента <span class="boow">&lt;meta&gt;</span> доступны атрибуты <span class="boow">charset</span>, <span class="boow">content</span>, <span class="boow">http-equiv</span>, <span class="boow">name</span>, а также
+                            глобальные атрибуты.
+                        </p>
+                        <table>
+                            <caption>ТАБЛИЦА 2. АТРИБУТЫ ТЕГА &lt;META&gt;</caption>
+                            <tr>
+                                <th>Атрибут</th>
+                                <th>Описание, принимаемое значение</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">charset</span>
+                                </td>
+                                <td>
+                                    Указывает кодировку символов для текущего HTML-документа: <span class="boow">&lt;meta charset="UTF8"&gt;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">content</span>
+                                </td>
+                                <td>
+                                    Содержит произвольный текст, который определяет значение, ассоциируемое с
+                                    атрибутом <span class="boow">http-equiv</span> или <span class="boow">name</span>, в зависимости от их значения.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">httpequiv</span>
+                                </td>
+                                <td>
+                                    Контролирует действия браузера на данной веб-странице (эквивалент HTTP
+                                    заголовков). При отображении страницы браузер будет следовать инструкциям,
+                                    заданным в атрибуте: <span class="boow">default-styleу</span> казывает предпочтительный стиль для
+                                    использования на странице. Атрибут <span class="boow">content</span> должен содержать идентификатор
+                                    элемента <span class="boow">&lt;link&gt;</span>, который ссылается на таблицу стилей CSS, или идентификатор
+                                    элемента <span class="boow">&lt;style&gt;</span>, содержащего таблицу стилей.
+                                    <span class="boow">refresh</span> указывает время в секундах до перезагрузки страницы или время до
+                                    перенаправления на другую страницу, если в атрибуте <span class="boow">content</span> после указания
+                                    времени идет строка <span class="boow">"url=адрес_страницы"</span>.
+                                    Автоматическая перезагрузка страницы через заданный промежуток времени, в
+                                    данном примере, через 30 секунд: <span class="boow">&lt;meta http-equiv="refresh" content="30"&gt;</span> Если
+                                    необходимо сразу перебросить посетителя на другую страницу, то можно указать URLадрес в параметре <span class="boow">url</span>: <span class="boow">&lt;meta http-equiv="refresh" content="0; url="http://mail.ru/"&gt;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">name</span>
+                                </td>
+                                <td>
+                                    Ассоциируется со значением, содержащемся в атрибуте <span class="boow">content</span>. Не должен
+                                    использоваться в случае, если для элемента уже заданы атрибуты <span class="boow">http-equiv</span>, <span class="boow">charset</span>
+                                    или <span class="boow">itemprop</span>. <span class="boow">application-name</span> указывает название веб-приложения, используемого
+                                    на странице. authorуказывает имя автора документа в свободном формате. <span class="boow">description</span>
+                                    определяет краткое описание к содержимому страницы, например: <span class="boow">&lt;meta
+                                    name="description" content="Описание содержимого страницы"&gt;</span> <span class="boow">generator</span> указывает
+                                    один из пакетов программного обеспечения, используемого для создания документа,
+                                    например: <span class="boow">&lt;meta name="generator" content="WordPress 4.0"&gt;</span>. <span class="boow">keywords</span>. содержит
+                                    список ключевых слов, разделенных запятыми, соответствующих содержимому
+                                    страницы, например: <span class="boow">&lt;meta name="keywords" content="Ключевые слова через
+                                    запятую"&gt;</span>. Также атрибут name может принимать следующие значения из
+                                    расширенной спецификации, такие как <span class="boow">creator</span>, <span class="boow">googlebot</span>, <span class="boow">publisher</span>, <span class="boow">robots</span>, <span class="boow">slurp</span>,
+                                    <span class="boow">viewport</span>, хотя ни одно из них еще не было официально принято.
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>Элемент &lt;style&gt;</h3>
+                        <p>
+                            Внутри этого элемента задаются стили, которые используются на странице. Для задания
+                            стилей в HTML-документе используется язык CSS. Таких элементов на странице может быть
+                            несколько.
+                        </p>
+                        <p>
+                            Для элемента доступны атрибуты <span class="boow">media</span>, <span class="boow">scoped</span>, <span class="boow">type</span>, а также глобальные атрибуты.
+                        </p>
+                        <p>
+                            Внутрь этого элемента можно записывать код форматирования как самих элементов вебстраницы, так и веб-страницы целиком.
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">style</span> <span class="red">type</span>=<span class="purple">"text/css"</span>&gt;<br>
+                            .paper {<br>
+                            width: 200px;<br>
+                            height: 300px;<br>
+                            background-color: #ef4444;<br>
+                            color: #666666;<br>
+                            }<br>
+                            &lt;<span class="blue">/style</span>&gt;
+                        </div>
+                        <p>
+                            Чтобы подключить к элементу заданный стиль, необходимо через атрибут <span class="boow">class</span> (или <span class="boow">id</span>)
+                            присвоить элементу соответствующее название:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">div</span> <span class="red">class</span>=<span class="purple">"paper"</span>&gt;<br>
+                            ...<br>
+                            &lt;<span class="blue">/div</span>&gt;<br>
+                        </div>
+                        <p>
+                            CSS-код можно встраивать непосредственно в элемент разметки в виде значение атрибута
+                            <span class="boow">style</span> , например:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">p</span> <span class="red">style</span>=<span class="purple">"color: #666666; background-color: #ef4444; padding: 20px;"</span>&gt;
+                        </div>
+                        <table>
+                            <caption>ТАБЛИЦА 3. АТРИБУТЫ ТЕГА &lt;STYLE&gt;</caption>
+                            <tr>
+                                <th>Атрибут</th>
+                                <th>Описание, принимаемое значение</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">media</span>
+                                </td>
+                                <td>
+                                    Определяет, для какого типа устройства предназначены те или иные каскадные
+                                    таблицы стилей. Внутри таблицы стилей CSS специфичные правила для
+                                    определенных устройств прописываются с помощью media query.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">nonce</span>
+                                </td>
+                                <td>
+                                    Генерируемая случайным образом на сервере строковая переменная, которая
+                                    устанавливает правила использования встроенных стилей с целью защиты контента.
+                                    Значение атрибута — строка текста.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">type</span>
+                                </td>
+                                <td>
+                                    Определяет MIME-тип подключаемого файла со стилями, в данном случае <span class="boow">&lt;style
+                                    type="text/css"&gt;</span>.
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>Элемент &lt;link&gt;</h3>
+                        <p>
+                            Задать стили для документа можно также при помощи другого способа — записать их в
+                            отдельный файл с расширением <span class="boow">.css</span>, например, <span class="boow">style.css</span>.
+                        </p>
+                        <p>
+                            Подключить файл со стилями к веб-странице можно двумя способами: через директиву
+                            <span class="boow">@import url</span>
+                            <div class="yellow-box">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;<span class="blue">html</span>&gt;<br>
+                                &lt;<span class="blue">head</span>&gt;<br>
+                                &lt;<span class="blue">style</span>&gt;<br>
+                                @import url(style.css);<br>
+                                &lt;<span class="blue">/style</span>&gt;<br>
+                                &lt;<span class="blue">meta</span>&gt;<br>
+                                &lt;<span class="blue">title</span>&gt; &lt;<span class="blue">/title</span>&gt;<br>
+                                &lt;<span class="blue">/head</span>&gt;
+                            </div>
+                            с использованием элемента <span class="boow">&lt;link&gt;</span>. Элемент не требует закрывающего тега. Данный элемент
+                            определяет отношение между текущей страницей и другими документами. Таких элементов на
+                            странице может быть несколько. Запись будет иметь следующий вид:
+                        </p>
+                        <div class="yellow-box">
+                            &lt;<span class="blue">link</span> <span class="red">rel</span>=<span class="purple">"stylesheet"</span> <span class="red">href</span>=<span class="purple">"style.css"</span> <span class="red">type</span>=<span class="purple">"text/css"</span>&gt;
+                        </div>
+                        <p>
+                            Для элемента доступны атрибуты <span class="boow">href</span>, <span class="boow">hreflang</span>, <span class="boow">media</span>, <span class="boow">rel</span>, <span class="boow">type</span>, а также глобальные
+                            атрибуты.
+                        </p>
+                        <table>
+                            <caption>ТАБЛИЦА 4. АТРИБУТЫ ТЕГА &lt;LINK&gt;</caption>
+                            <tr>
+                                <th>Атрибут</th>
+                                <th>Описание, принимаемое значение</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">crossorigin</span>
+                                </td>
+                                <td>
+                                    Указывает, должен ли использоваться CORS (технология браузеров, которая
+                                    позволяет предоставить веб-странице доступ к ресурсам другого домена) при
+                                    извлечении изображения с сайта. <span class="boow">anonymous</span> — в кросс-доменный запрос браузер
+                                    автоматически добавляет заголовок Origin, содержащий имя домена, с которого
+                                    осуществлён запрос. Если сервер не ответит CORS-заголовком <span class="boow">Access-Control-AllowOrigin: *</span> (или имя домена вместо звёздочки), то загрузка изображения будет
+                                    заблокирована. <span class="boow">use-credentials</span> — если сервер не предоставляет учётные данные с
+                                    помощью <span class="boow">Access-Control-Allow-Credentials: true</span>, то загрузка изображения будет
+                                    заблокирована.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">href</span>
+                                </td>
+                                <td>
+                                    Основной атрибут тега, в качестве значения выступает путь к файлу со стилями.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">hreflang</span>
+                                </td>
+                                <td>
+                                    Определяет язык текста в документе, на который идет ссылка.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">media</span>
+                                </td>
+                                <td>
+                                    Определяет тип устройства, к которым должен быть применен ресурс ссылки
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">nonce</span>
+                                </td>
+                                <td>
+                                    Генерируемая случайным образом на сервере строковая переменная, которая
+                                    устанавливает правила использования встроенных стилей с целью защиты контента.
+                                    Значение атрибута — строка текста
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">rel</span>
+                                </td>
+                                <td>
+                                    Атрибут определяет отношения между текущим документом и документом, на
+                                    который идет ссылка. <span class="boow">alternate</span> — ссылка на тот же документ, но в другом формате
+                                    (например, страницы для печати, перевод, зеркало, лента в формате RSS или Atom),
+                                    <span class="boow">&lt;link rel="alternate stylesheet" type="text/css" title="small_font" href="small-font.css"&gt;</span>.
+                                    <span class="boow">&lt;link rel="alternate" type="application/rss+xml" title="my_RSS" href="index.xml"&gt;</span>
+                                    <span class="boow">&lt;link rel="alternate" type="application/atom+xml" title="News" href="/atom.xml?
+                                    type=news"&gt;</span> <span class="boow">archives</span> — указывает на то, что документ по ссылке представляет
+                                    исторический интерес. Ссылка может указывать на коллекцию записей, документов
+                                    и других материалов. <span class="boow">author</span> ссылка на страницу об авторе документа или на
+                                    страницу с контактными данными автора. <span class="boow">bookmark</span> ссылка на ближайшего предка
+                                    статьи, являющегося связующим звеном, или на раздел статьи, наиболее тесно
+                                    связанных с элементом, если нет предка. <span class="boow">external</span> используется для указания того,
+                                    что страница на которую ведет ссылка не являются частью данного сайта. <span class="boow">first</span>
+                                    указывает ссылку, ведущую на первый документ из последовательности документов.
+                                    <span class="boow">help</span> ссылка на документ со справкой. <span class="boow">icon</span> определяет путь к иконке, которая будет
+                                    использована для текущего документа. <span class="boow">last</span> указывает ссылку, ведущую на
+                                    последний документ в последовательности документов. <span class="boow">license</span> ссылка на сведения
+                                    об авторских правах для документа. <span class="boow">next</span> указывает, что этот документ является
+                                    частью серии, и что ссылка ведет на следующий документ в этой серии. <span class="boow">&lt;link
+                                    rel="next" href="/next.html" type="text/html" title="Следующая страница"&gt;</span> <span class="boow">nofollow</span>
+                                    указывает на то, что ссылка не одобрена автором страницы или что ссылка носит
+                                    коммерческий характер. <span class="boow">noreferrer</span> указывает на то, что заголовок запроса клиента,
+                                    содержащий url источника запроса, не должен передаваться при переходе по ссылке.
+                                    <span class="boow">pingback</span> указывает адрес пингбэк-сервера, что дает возможность для блога
+                                    автоматически оповещать сайты, ссылающиеся на него. <span class="boow">prefetch</span> указывает, что
+                                    следует заранее кэшировать файл, на который ведет ссылка. <span class="boow">prev</span> указывает, что этот
+                                    документ является частью серии, и что ссылка ведет на предыдущий документ в этой
+                                    серии. <span class="boow">&lt;link rel="prev" href="/next.html" type="text/html" title="Предыдущая
+                                    страница"&gt;</span> <span class="boow">search</span> указывает, что ссылаемый документ содержит интерфейс поиска
+                                    и связанных с ним ресурсов. <span class="boow">sidebar</span> указывает, что ссылаемый документ, если это
+                                    возможно, будет показан в дополнительном контексте браузера, и некоторые
+                                    браузеры при щелчке по гиперссылке открывают окно для добавления ссылки в
+                                    панель закладок. <span class="boow">stylesheet</span> ссылка на внешний файл, который будет использоваться
+                                    в качестве таблицы стилей для данного документа. <span class="boow">tag</span> указывает на то, что метка, на
+                                    которую ведет гиперссылка, относится к данному документу. <span class="boow">up</span> указывает, что
+                                    страница является частью иерархической структуры, и что гиперссылка ведет на
+                                    более высокий уровень ресурса в структуре.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">sizes</span>
+                                </td>
+                                <td>
+                                    Указывает размер иконок для визуального отображения. Атрибут <span class="boow">sizes</span> используется
+                                    только совместно с <span class="boow">rel="icon"</span>, и может принимать следующий значения:
+                                    ширинахвысота — определяет список размеров, разделенных пробелами, каждый
+                                    размер должен быть в формате — ширинахвысота (размеры иконки задаются в
+                                    пикселях), например: <span class="boow">&lt;link rel="icon" href="favicon.png" sizes="16x16 32х32"
+                                    type="image/png"&gt;</span>; <span class="boow">any</span> — иконка может масштабироваться до любого размера.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">title</span>
+                                </td>
+                                <td>
+                                    Определяет заголовок ссылки или название набора альтернативных таблиц стилей.
+                                    Значение атрибута — текст.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="boow">type</span>
+                                </td>
+                                <td>
+                                    Определяет MIME-тип документа, на который идет ссылка. В данном случае он
+                                    принимает значение <span class="boow">"text/css"</span>.
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
