@@ -263,7 +263,7 @@ td{
 
 .all-chests{
   width: 100%;
-  height: 820px;
+  height: auto;
 }
 
 .all-chests .chest-area{
