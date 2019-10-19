@@ -29,6 +29,13 @@ ul, ol, li{
     color: #BCBCBC;
 }
 
+a, a:link, a:visited, a:hover{
+    text-decoration: none;
+    color: #BCBCBC;
+}
+
+
+
 .border-box{
     box-sizing: border-box;
     border-left: 10px solid #BCBCBC;
