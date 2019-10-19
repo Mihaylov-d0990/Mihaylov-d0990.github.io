@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="designed_by_Mikhaylov's">
-        <link rel="stylesheet" href="theme/white_theme.css">
+        <link rel="stylesheet" href="theme/dark_theme.css">
         <title>White theme</title>
     </head>
     <body>
@@ -16,24 +16,25 @@
                     <ol>
                         <li>
                             <span class="bold">
-                                Основы HTML
+                                <a href="#elem_begins">Основы HTML</a>
                             </span>
                         </li>
                         <li>
                             <span class="bold">
-                                Структура HTML-документа
+                                <a href="#elem_struct">Структура HTML-документа</a>
                             </span>
                             <ul>
-                                <li>Элемент &lt;html&gt;</li>
-                                <li>Элемент &lt;head&gt;</li>
-                                <li>Элемент &lt;title&gt;</li>
-                                <li>Элемент &lt;meta&gt;</li>
-                                <li>Элемент &lt;style&gt;</li>
-                                <li>Элемент &lt;link&gt;</li>
+                                <li><a href="#elem_html">Элемент &lt;html&gt;</a></li>
+                                <li><a href="#elem_head">Элемент &lt;head&gt;</a></li>
+                                <li><a href="#elem_title">Элемент &lt;title&gt;</a></li>
+                                <li><a href="#elem_meta">Элемент &lt;meta&gt;</a></li>
+                                <li><a href="#elem_style">Элемент &lt;style&gt;</a></li>
+                                <li><a href="#elem_link">Элемент &lt;link&gt;</li>
                             </ul>
                         </li>
                     </ol>
                 </div>
+                <a name="elem_begins"></a>
                 <h3>Основы HTML</h3>
                 <div class="header-img">
                     <img src="pic/html_pic.png" alt="">
@@ -93,6 +94,7 @@
                     HTML-документ состоит из двух разделов — заголовка — между тегами <span class="boow">&lt;head&gt;</span>…<span class="boow">&lt;/head&gt;</span> и
                     содержательной части — между тегами <span class="boow">&lt;body&gt;</span>…<span class="boow">&lt;/body&gt;</span>.
                 </p>
+                <a name="elem_struct"></a>
                 <h3>Структура HTML-документа</h3>
                 <p>
                     Язык HTML следует правилам, которые содержатся в файле объявления типа документа
@@ -161,7 +163,8 @@
                 </p>
                 <ol>
                     <li>
-                        <h3>Элемент &lt;html&gt;</h3>
+                        <a name="elem_html"></a>
+                        <h3>Элемент &lt;html&gt;</h3>                       
                         <p>
                             Является корневым элементом документа. Все остальные элементы содержатся внутри тегов
                             <span class="boow">&lt;html&gt;</span>...<span class="boow">&lt;/html&gt;</span>. Все, что находится за пределами тегов, не воспринимается браузером как код
@@ -186,7 +189,8 @@
                         </table>
                     </li>
                     <li>
-                        <h3>Элемент &lt;head&gt;</h3>
+                        <a name="elem_head"></a>
+                        <h3>Элемент &lt;head&gt;</h3>                      
                         <p>
                             Раздел <span class="boow">&lt;head&gt;</span>...<span class="boow">&lt;/head&gt;</span> содержит техническую информацию о странице: заголовок,
                             описание, ключевые слова для поисковых машин, кодировку и т.д. Введенная в нем информация не
@@ -198,7 +202,8 @@
                         </p>
                     </li>
                     <li>
-                        <h3>Элемент &lt;title&gt;</h3>
+                        <a name="elem_title">
+                        <h3>Элемент &lt;title&gt;</h3> 
                         <p>
                             Обязательным тегом раздела <span class="boow">&lt;head&gt;</span> является тег <span class="boow">&lt;title&gt;</span>. Текст, размещенный внутри этого
                             тега, отображается в строке заголовка веб-браузера. Длина заголовка должна быть не более 60
@@ -210,7 +215,8 @@
                         </p>
                     </li>
                     <li>
-                        <h3>Элемент &lt;meta&gt;</h3>
+                        <a name="elem_meta"></a>
+                        <h3>Элемент &lt;meta&gt;</h3>            
                         <p>
                             Необязательным тегом раздела <span class="boow">&lt;head&gt;</span> является одинарный тег <span class="boow">&lt;meta&gt;</span>. С его помощью
                             можно задать описание содержимого страницы и ключевые слова для поисковых машин, автора
@@ -331,6 +337,7 @@
                         </table>
                     </li>
                     <li>
+                        <a name="elem_style"></a>
                         <h3>Элемент &lt;style&gt;</h3>
                         <p>
                             Внутри этого элемента задаются стили, которые используются на странице. Для задания
@@ -407,6 +414,7 @@
                         </table>
                     </li>
                     <li>
+                        <a name="elem_link"></a>
                         <h3>Элемент &lt;link&gt;</h3>
                         <p>
                             Задать стили для документа можно также при помощи другого способа — записать их в
@@ -416,7 +424,7 @@
                             Подключить файл со стилями к веб-странице можно двумя способами: через директиву
                             <span class="boow">@import url</span>
                         </p>
-                            <div class="yellow-box">
+                            <div class="yellow-box">                       
                                 &lt;!DOCTYPE html&gt;<br>
                                 &lt;<span class="blue">html</span>&gt;<br>
                                 &lt;<span class="blue">head</span>&gt;<br>
