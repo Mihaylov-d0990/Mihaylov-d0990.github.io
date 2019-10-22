@@ -18,73 +18,78 @@
         </h2>
       </div>
     </header>
-    <article class="content-chest">
-      <h2>First question</h2>
+    <article class="content-test">
+      <p>Вопросы с одним ответом 1-4</p>
+      <p>Вопросы с одним или более ответами 5-7 (кнопки нажимать в порядке возрастания)</p>
+      <p>Вопросы с вводом данных 8-10</p>
+      <h2>1) Кто из них создатель C++?</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" name="check" onclick="test(0, 1)">
-            <input type="radio" name="check" onclick="test(0, 2)">
-            <input type="radio" name="check" onclick="test(0, 3)">
-            <input type="radio" name="check" onclick="test(0, 4)">
+            <span>a</span><input type="radio" name="check" onclick="test(0, 1)"><span>Бьёрн Страуструп</span><br>
+            <span>b</span><input type="radio" name="check" onclick="test(0, 2)"><span>Джеймс Гослинг</span><br>
+            <span>c</span><input type="radio" name="check" onclick="test(0, 3)"><span>Гвидо Ван Россум</span><br>
+            <span>d</span><input type="radio" name="check" onclick="test(0, 4)"><span>Расмус Лердорф</span><br>
         </form>
-        <h2>Second question</h2>
+        <h2>2) Кто тут папка всех языков?</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" name="check" onclick="test(1, 1)">
-            <input type="radio" name="check" onclick="test(1, 2)">
-            <input type="radio" name="check" onclick="test(1, 3)">
-            <input type="radio" name="check" onclick="test(1, 4)">
+            <span>a</span><input type="radio" name="check" onclick="test(1, 1)"><span>Java</span><br>
+            <span>b</span><input type="radio" name="check" onclick="test(1, 2)"><span>Python</span><br>
+            <span>c</span><input type="radio" name="check" onclick="test(1, 3)"><span>C</span><br>
+            <span>d</span><input type="radio" name="check" onclick="test(1, 4)"><span>C++</span><br>
         </form>
-        <h2>Third question</h2>
+        <h2>3) Язык программирования, с помощью которого страницы сайтов становятся интерактивными</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" name="check" onclick="test(2, 1)">
-            <input type="radio" name="check" onclick="test(2, 2)">
-            <input type="radio" name="check" onclick="test(2, 3)">
-            <input type="radio" name="check" onclick="test(2, 4)">
+            <span>a</span><input type="radio" name="check" onclick="test(2, 1)"><span>PHP</span><br>
+            <span>b</span><input type="radio" name="check" onclick="test(2, 2)"><span>JavaScript</span><br>
+            <span>c</span><input type="radio" name="check" onclick="test(2, 3)"><span>Perl</span><br>
+            <span>d</span><input type="radio" name="check" onclick="test(2, 4)"><span>C++</span><br>
         </form>
-        <h2>Fourth question</h2>
+        <h2>4) Первый программист</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" name="check" onclick="test(3, 1)">
-            <input type="radio" name="check" onclick="test(3, 2)">
-            <input type="radio" name="check" onclick="test(3, 3)">
-            <input type="radio" name="check" onclick="test(3, 4)">
+            <span>a</span><input type="radio" name="check" onclick="test(3, 1)"><span>Билл Гейтс</span><br>
+            <span>b</span><input type="radio" name="check" onclick="test(3, 2)"><span>Ада Лавлейс</span><br>
+            <span>c</span><input type="radio" name="check" onclick="test(3, 3)"><span>Стив Джобс</span><br>
+            <span>d</span><input type="radio" name="check" onclick="test(3, 4)"><span>Линус Торвальдс</span><br>
         </form>
-        <h2>Fifth question</h2>
+        <h2>5) Кто самый крутой программист в группе?</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" onclick="test(4, 1)">
-            <input type="radio" onclick="test(4, 2)">
-            <input type="radio" onclick="test(4, 3)">
-            <input type="radio" onclick="test(4, 4)">
-            <input type="reset" name="" value="Reset">
+            <span>a</span><input type="radio" onclick="test(4, 1)"><span>Михайлов Данила</span><br>
+            <span>b</span><input type="radio" onclick="test(4, 2)"><span>Михайлов Данила</span><br>
+            <span>c</span><input type="radio" onclick="test(4, 3)"><span>Михайлов Данила</span><br>
+            <span>d</span><input type="radio" onclick="test(4, 4)"><span>Михайлов Данила</span><br>
+            <input type="reset" value="Cбросить" onclick="resetAnswer(4)" class="button-move button-test-style"><br>
         </form>
-        <h2>Sixth question</h2>
+        <h2>6) Какие из предложенных языков являются языками разметки?</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" onclick="test(5, 1)">
-            <input type="radio" onclick="test(5, 2)">
-            <input type="radio" onclick="test(5, 3)">
-            <input type="radio" onclick="test(5, 4)">
-            <input type="reset" name="" value="Reset">
+            <span>a</span><input type="radio" onclick="test(5, 1)"><span>PHP</span><br>
+            <span>b</span><input type="radio" onclick="test(5, 2)"><span>HTML</span><br>
+            <span>c</span><input type="radio" onclick="test(5, 3)"><span>JavaScript</span><br>
+            <span>d</span><input type="radio" onclick="test(5, 4)"><span>CSS</span><br>
+            <input type="reset" value="Cбросить" onclick="resetAnswer(5)" class="button-move button-test-style"><br>
         </form>
-        <h2>Seventh question</h2>
+        <h2>7) Самый быстрый язык программирования</h2>
         <form class="" action="index.html" method="post">
-            <input type="radio" onclick="test(6, 1)">
-            <input type="radio" onclick="test(6, 2)">
-            <input type="radio" onclick="test(6, 3)">
-            <input type="radio" onclick="test(6, 4)">
-            <input type="reset" name="" value="Reset">
+            <span>a</span><input type="radio" onclick="test(6, 1)"><span>Rust</span><br>
+            <span>b</span><input type="radio" onclick="test(6, 2)"><span>Python</span><br>
+            <span>c</span><input type="radio" onclick="test(6, 3)"><span>Pascal</span><br>
+            <span>d</span><input type="radio" onclick="test(6, 4)"><span>C</span><br>
+            <input type="reset" value="Cбросить" onclick="resetAnswer(6)" class="button-move button-test-style">
         </form>
-        <h2>Eigth question</h2>
+        <h2>8) Тег ссылки</h2>
         <form class="" action="index.html" method="post">
-            <input type="input" name="input" placeholder="Enter the answer" onblur="test(7, this.value)">
+            <input onblur="test(7, this.value)"><br>
         </form>
-        <h2>Ninth question</h2>
+        <h2>9) Тег корневого элемента HTML-документа</h2>
         <form class="" action="index.html" method="post">
-            <input type="input" name="input" placeholder="Enter the answer" onblur="test(8, this.value)">
+            <input onblur="test(8, this.value)"><br>
         </form>
-        <h2>Tenth question</h2>
+        <h2>10) Тег нумерованного списка</h2>
         <form class="" action="index.html" method="post">
-            <input type="input" name="input" placeholder="Enter the answer" onblur="test(9, this.value)">
+            <input onblur="test(9, this.value)"><br>
         </form>
 
-        <br><button type="button" name="button" onclick="checkArray()">Check</button>
+        <br><button type="button" name="button" class="button-move button-test-style" onclick="checkArray(); checkTrue();">Проверить</button>
+
+        <div id="place-for-result"></div>
         <script src="script.js"></script>
     </article>
   </body>
