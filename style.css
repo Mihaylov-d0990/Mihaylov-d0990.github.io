@@ -403,3 +403,35 @@ td{
   background-color: #FFAED5;
   display: block;
 }
+
+.content-test{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 560px;
+  background-color: #fffc9e;
+  float: left;
+  padding-left: 20px;
+}
+
+.content-test h2{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.content-test form{
+    margin-left: 20px;
+}
+
+.content-test form .button-move{
+    margin-top: 10px;
+}
+
+.content-test .button-move{
+    margin-left: 20px;
+}
+
+.button-test-style{
+    border: 1px dashed black;
+    background-color: #faf452;
+    width: 100px;
+}
