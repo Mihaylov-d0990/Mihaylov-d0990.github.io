@@ -24,9 +24,28 @@ function checkArray(){
 function checkTrue(){
     let t = 0;
     for (let i = 0; i < array.length; i++) {
-        if (array[i] == trueArray[i]){
-            t++;
+        if ((i == 4 || i == 5 || i == 6) && (array[i] != undefined)){
+            let arrayMore = array[i].split('');
+            let arrayMoreTrue = trueArray[i].split('');
+            let x = 0;
+            for (let i = 0; i < arrayMore.length; i++) {
+                for (let j = 0; j < arrayMoreTrue.length; j++) {
+                    if (arrayMore[i] == arrayMoreTrue[j]){
+                        x++;
+                        break;
+                    }
+                }
+            }
+            if (x == trueArray[i].length) {
+                t++;
+            }
         }
+        else {
+            if (array[i] == trueArray[i]){
+                t++;
+            }
+        }
+
     }
     document.getElementById('place-for-result').innerHTML='Количество правильных ответов: ' + t;
 };
