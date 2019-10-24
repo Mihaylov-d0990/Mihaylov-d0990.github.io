@@ -51,7 +51,7 @@ function checkTrue(){
 };
 
 function resetAnswer(quest) {
-    array[quest] = 0;
+    array[quest] = undefined;
 };
 
 let array = new Array(10);
