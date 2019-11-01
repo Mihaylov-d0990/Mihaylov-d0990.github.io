@@ -24,166 +24,166 @@
           <p class="condition">Вопросы с одним или более ответами 5-7</p>
           <p class="condition">Вопросы с вводом данных 8-10</p>
       </div>
+      <br><button type="button" name="button" class="button-move button-test-style" onclick="enable();">Начать тест</button>
 	  <ol>
 		<li><span> Кто из них создатель C++?</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" name="check" onclick="test(0, 1)"><span>Бьёрн Страуструп</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(0, 1)" disabled><span>Бьёрн Страуструп</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(0, 2)"><span>Джеймс Гослинг</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(0, 2)" disabled><span>Джеймс Гослинг</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(0, 3)"><span>Гвидо Ван Россум</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(0, 3)" disabled><span>Гвидо Ван Россум</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(0, 4)"><span>Расмус Лердорф</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(0, 4)" disabled><span>Расмус Лердорф</span><br>
 					</li>
 				</ol>
 			</form>
 		</li>
-			
+
 		<li><span> Кто тут папка всех языков?</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" name="check" onclick="test(1, 1)"><span>Java</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(1, 1)" disabled><span>Java</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(1, 2)"><span>Python</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(1, 2)" disabled><span>Python</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(1, 3)"><span>C</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(1, 3)" disabled><span>C</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(1, 4)"><span>C++</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(1, 4)" disabled><span>C++</span><br>
 					</li>
 				</ol>
 			</form>
 		</li>
-			
+
 		<li><span> Язык программирования, с помощью которого страницы сайтов становятся интерактивными</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" name="check" onclick="test(2, 1)"><span>PHP</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(2, 1)" disabled><span>PHP</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(2, 2)"><span>JavaScript</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(2, 2)" disabled><span>JavaScript</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(2, 3)"><span>Perl</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(2, 3)" disabled><span>Perl</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(2, 4)"><span>C++</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(2, 4)" disabled><span>C++</span><br>
 					</li>
 				</ol>
 			</form>
 		</li>
-			
+
 		<li><span> Первый программист</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" name="check" onclick="test(3, 1)"><span>Билл Гейтс</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(3, 1)" disabled><span>Билл Гейтс</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(3, 2)"><span>Ада Лавлейс</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(3, 2)" disabled><span>Ада Лавлейс</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(3, 3)"><span>Стив Джобс</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(3, 3)" disabled><span>Стив Джобс</span><br>
 					</li>
 					<li>
-						<input type="radio" name="check" onclick="test(3, 4)"><span>Линус Торвальдс</span><br>
+						<input type="radio" class="test-dis" name="check" onclick="test(3, 4)" disabled><span>Линус Торвальдс</span><br>
 					</li>
 				</ol>
 			</form>
 		</li>
-			
+
 		<li><span> Кто самый крутой программист в группе?</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" onclick="test(4, 1)"><span>Михайлов Данила</span><br>
+						<input type="checkbox" class="test-dis" class="test-dis" onclick="test(4, 1)" disabled><span>Михайлов Данила</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(4, 2)"><span>Михайлов Данила</span><br>
+						<input type="checkbox" class="test-dis" class="test-dis" onclick="test(4, 2)" disabled><span>Михайлов Данила</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(4, 3)"><span>Михайлов Данила</span><br>
+						<input type="checkbox" class="test-dis" class="test-dis" onclick="test(4, 3)" disabled><span>Михайлов Данила</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(4, 4)"><span>Михайлов Данила</span><br>
+						<input type="checkbox" class="test-dis" class="test-dis" onclick="test(4, 4)" disabled><span>Михайлов Данила</span><br>
 					</li>
 				</ol>
-				<input type="reset" value="Cбросить" onclick="resetAnswer(4)" class="button-move button-test-style"><br>
 			</form>
 		</li>
-			
+
 		<li><span> Какие из предложенных языков являются языками разметки?</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" onclick="test(5, 1)"><span>PHP</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(5, 1)" disabled><span>PHP</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(5, 2)"><span>HTML</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(5, 2)" disabled><span>HTML</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(5, 3)"><span>JavaScript</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(5, 3)" disabled><span>JavaScript</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(5, 4)"><span>CSS</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(5, 4)" disabled><span>CSS</span><br>
 					</li>
 				</ol>
-				<input type="reset" value="Cбросить" onclick="resetAnswer(5)" class="button-move button-test-style"><br>
 			</form>
 		</li>
-			
+
 		<li><span> Самый быстрый язык программирования</span>
 			<form>
 				<ol>
 					<li>
-						<input type="radio" onclick="test(6, 1)"><span>Rust</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(6, 1)" disabled><span>Rust</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(6, 2)"><span>Python</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(6, 2)" disabled><span>Python</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(6, 3)"><span>Pascal</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(6, 3)" disabled><span>Pascal</span><br>
 					</li>
 					<li>
-						<input type="radio" onclick="test(6, 4)"><span>C</span><br>
+						<input type="checkbox" class="test-dis" onclick="test(6, 4)" disabled><span>C</span><br>
 					</li>
 				</ol>
-				<input type="reset" value="Cбросить" onclick="resetAnswer(6)" class="button-move button-test-style">
 			</form>
 		</li>
-			
+
 		<li><span> С помощью какого тега можно создать ссылку?</span>
 			<form>
-				<input onblur="test(7, this.value)"><br>
+				<input onblur="test(7, this.value)" class="test-dis" disabled><br>
 			</form>
 		</li>
-			
+
 		<li><span> С помощью какого тега можно создать корневой элемент HTML-документа?</span>
 			<form>
-				<input onblur="test(8, this.value)"><br>
+				<input onblur="test(8, this.value)" class="test-dis" disabled><br>
 			</form>
 		</li>
-			
+
 		<li><span> С помощью какого тега можно создать нумерованный список?</span>
 			<form>
-				<input onblur="test(9, this.value)"><br>
+				<input onblur="test(9, this.value)" class="test-dis" disabled><br>
 			</form>
 		</li>
 	  </ol>
-		
-        <br><button type="button" name="button" class="button-move button-test-style" onclick="checkArray(); checkTrue();">Проверить</button>
+
+        <br><button type="button" name="button" class="button-move button-test-style" onclick="checkArray(); checkTrue(); ">Проверить</button>
 
         <div id="place-for-result"></div>
-        <a href="PDF-1.pdf">PDF</a>
+        <div id="PDF">
+            <a href="PDF-1.pdf">PDF</a>
+        </div>
         <script src="script.js"></script>
     </article>
     <script src="display_on.js"></script>
