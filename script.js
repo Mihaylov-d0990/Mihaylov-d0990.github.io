@@ -48,11 +48,24 @@ function checkTrue(){
 
     }
     document.getElementById('place-for-result').innerHTML='Количество правильных ответов: ' + t;
+    document.getElementById('PDF').style.display = 'block';
+
+    let inputs = document.getElementsByClassName('test-dis');
+    for (let i = 0; i < inputs.length; i++){
+        inputs[i].disabled = true;
+    }
 };
 
 function resetAnswer(quest) {
     array[quest] = undefined;
 };
+
+function enable(){
+    let inputs = document.getElementsByClassName('test-dis');
+    for (let i = 0; i < inputs.length; i++){
+        inputs[i].disabled = false;
+    }
+}
 
 let array = new Array(10);
 let trueArray = ['1', '3', '2', '2', '1234', '24', '4', 'a', 'html', 'ol'];
