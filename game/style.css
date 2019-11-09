@@ -1,1 +1,39 @@
+body{
+  background-color: #eeeeee;
+}
 
+header{
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 25px;
+}
+
+.head1{
+  background-color: #faf452;
+  width: 100%;
+  height: 40px;
+  color: #14140e;
+}
+
+.head2{
+  background-color: #14140e;
+  width: 100%;
+  height: 40px;
+  color: #dedede;
+}
+
+h1, h2{
+  margin-top: 0;
+  margin-left: 40px;
+}
+
+.contentArticle{
+  width: 100%;
+  height: minmax(560px, auto);
+  background-color: #fffc9e;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+}
