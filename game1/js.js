@@ -105,6 +105,7 @@ function move(){
     if ((posY == 3) && (posX == width - 5) && (flag != true)){
         flag = true;
         box[3][width - 5].firstChild.remove();
+        document.getElementById('text').innerHTML = "Отнеси пиво Бумеру";
     }
 
     if ((posX == width - 1) && (posY == height - 2)) {
