@@ -33,9 +33,6 @@ h1, h2{
   width: 100%;
   height: minmax(560px, auto);
   background-color: #fffc9e;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 20px;
 }
 
 td{
