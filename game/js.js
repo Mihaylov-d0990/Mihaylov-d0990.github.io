@@ -53,6 +53,7 @@ function search(){
                 ((i != 0) && (i != 1) && (j != width - 1) && (j != width - 2) && box[i][j].firstChild.src == box[i - 1][j + 1].firstChild.src && box[i][j].firstChild.src == box[i - 2][j + 2].firstChild.src)){
                     let vic = document.getElementById('vic');
                     let pic = document.createElement('img');
+                    document.getElementById('vic').innerHTML = '';
                     pic.src = box[i][j].firstChild.src;
                     vic.appendChild(pic);
                     console.log("victory");
