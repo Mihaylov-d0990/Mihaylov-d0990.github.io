@@ -34,7 +34,8 @@ h1, h2{
   height: minmax(560px, auto);
   background-color: #fffc9e;
   display: grid;
-  grid-template-column: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 td{
