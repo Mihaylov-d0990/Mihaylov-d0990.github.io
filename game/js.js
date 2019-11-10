@@ -56,6 +56,7 @@ function search(){
                     document.getElementById('vic').innerHTML = '';
                     pic.src = box[i][j].firstChild.src;
                     vic.appendChild(pic);
+                    createBox();
                     console.log("victory");
                 }
             }
