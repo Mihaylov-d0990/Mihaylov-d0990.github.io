@@ -1,66 +1,109 @@
 function check(){
-    for (let i = 0; i < controlHeight; i++){
-        let tr = document.createElement('tr');
-        controller.appendChild(tr);
-        for (let j = 0; j < controlWidth; j++){
-            boxControl[i][j] = document.createElement('td');
-            boxControl[i][j].style.backgroundColor = "black";
-            tr.appendChild(boxControl[i][j]);
-        }
-    }
-
-    boxControl[0][1].appendChild(arrowUp);
-    boxControl[0][1].onclick = move;
-    boxControl[1][0].appendChild(arrowLeft);
-    boxControl[1][0].onclick = move;
-    boxControl[1][1].appendChild(arrowDown);
-    boxControl[1][1].onclick = move;
-    boxControl[1][2].appendChild(arrowRight);
-    boxControl[1][2].onclick = move;
-
-    for (let i = 0; i < height; i++){
-        let tr = document.createElement('tr');
-        lab.appendChild(tr);
-        for (let j = 0; j < width; j++){
-            box[i][j] = document.createElement('td');
-            if ((i == 0) || (i == height - 1) || (j == 0) || (j == width - 1)){
-                box[i][j].className = "wall";
-            }else{
-                box[i][j].className = "floor";
+    if (!created){
+        created = true;
+        for (let i = 0; i < controlHeight; i++){
+            let tr = document.createElement('tr');
+            controller.appendChild(tr);
+            for (let j = 0; j < controlWidth; j++){
+                boxControl[i][j] = document.createElement('td');
+                boxControl[i][j].style.backgroundColor = "black";
+                tr.appendChild(boxControl[i][j]);
             }
-            tr.appendChild(box[i][j]);
         }
+
+        boxControl[0][1].appendChild(arrowUp);
+        boxControl[0][1].onclick = move;
+        boxControl[1][0].appendChild(arrowLeft);
+        boxControl[1][0].onclick = move;
+        boxControl[1][1].appendChild(arrowDown);
+        boxControl[1][1].onclick = move;
+        boxControl[1][2].appendChild(arrowRight);
+        boxControl[1][2].onclick = move;
+
+        for (let i = 0; i < height; i++){
+            let tr = document.createElement('tr');
+            lab.appendChild(tr);
+            for (let j = 0; j < width; j++){
+                box[i][j] = document.createElement('td');
+                if ((i == 0) || (i == height - 1) || (j == 0) || (j == width - 1)){
+                    box[i][j].className = "wall";
+                }else{
+                    box[i][j].className = "floor";
+                }
+                tr.appendChild(box[i][j]);
+            }
+        }
+
+        box[1][0].className = "floor";
+        box[height - 2][width - 1].className = "floor";
+
+        box[posY][posX].appendChild(img);
+        box[height - 2][width - 1].appendChild(img1);
+
+        box[1][4].className = "wall";
+        box[1][6].className = "wall";
+        box[2][2].className = "wall";
+        box[2][3].className = "wall";
+        box[2][4].className = "wall";
+        box[2][6].className = "wall";
+        box[3][2].className = "wall";
+        box[3][6].className = "wall";
+        box[4][2].className = "wall";
+        box[4][3].className = "wall";
+        box[4][5].className = "wall";
+        box[4][6].className = "wall";
+        box[7][2].className = "wall";
+        box[7][6].className = "wall";
+        box[7][10].className = "wall";
+        box[8][4].className = "wall";
+        box[8][8].className = "wall";
+        box[8][12].className = "wall";
+
+        for (let i = 2; i < width - 1; i++){
+            box[6][i].className = "wall";
+        }
+
+
+        addEventListener("keydown", function(event) {
+            if (posX != 0){
+                if ((event.keyCode == 37) && (box[posY][posX - 1].className != "wall") && (keys)){
+                    console.log("left");
+                    posX--;
+                    box[posY][posX].appendChild(img);
+                    checkFlag();
+                }
+            }
+        });
+
+        addEventListener("keydown", function(event) {
+            if ((event.keyCode == 38) && (box[posY - 1][posX].className != "wall") && (keys)){
+                console.log("up");
+                posY--;
+                box[posY][posX].appendChild(img);
+                checkFlag();
+            }
+        });
+
+        addEventListener("keydown", function(event) {
+            if (posX != width - 1){
+                if ((event.keyCode == 39) && (box[posY][posX + 1].className != "wall") && (keys)){
+                    console.log("right");
+                    posX++;
+                    box[posY][posX].appendChild(img);
+                    checkFlag();
+                }
+            }
+        });
+
+        addEventListener("keydown", function(event) {
+            if ((event.keyCode == 40) && (box[posY + 1][posX].className != "wall") && (keys)){
+                console.log("down");
+                posY++;
+                box[posY][posX].appendChild(img);
+                checkFlag();
+            }
+        });
     }
-
-    box[1][0].className = "floor";
-    box[height - 2][width - 1].className = "floor";
-
-    box[posY][posX].appendChild(img);
-    box[height - 2][width - 1].appendChild(img1);
-
-    box[1][4].className = "wall";
-    box[1][6].className = "wall";
-    box[2][2].className = "wall";
-    box[2][3].className = "wall";
-    box[2][4].className = "wall";
-    box[2][6].className = "wall";
-    box[3][2].className = "wall";
-    box[3][6].className = "wall";
-    box[4][2].className = "wall";
-    box[4][3].className = "wall";
-    box[4][5].className = "wall";
-    box[4][6].className = "wall";
-    box[7][2].className = "wall";
-    box[7][6].className = "wall";
-    box[7][10].className = "wall";
-    box[8][4].className = "wall";
-    box[8][8].className = "wall";
-    box[8][12].className = "wall";
-
-    for (let i = 2; i < width - 1; i++){
-        box[6][i].className = "wall";
-    }
-
 }
 
 function move(){
@@ -68,12 +111,14 @@ function move(){
         console.log("up");
         posY--;
         box[posY][posX].appendChild(img);
+        checkFlag();
     }
 
     if ((this.firstChild == arrowDown) && (box[posY + 1][posX].className != "wall")){
         console.log("down");
         posY++;
         box[posY][posX].appendChild(img);
+        checkFlag();
     }
 
     if (posX != 0){
@@ -81,6 +126,7 @@ function move(){
             console.log("left");
             posX--;
             box[posY][posX].appendChild(img);
+            checkFlag();
         }
     }
 
@@ -89,13 +135,17 @@ function move(){
             console.log("right");
             posX++;
             box[posY][posX].appendChild(img);
+            checkFlag();
         }
     }
+}
 
+function checkFlag(){
     if ((posY == height - 2) && (posX == width - 1)){
         if (flag){
             document.getElementById('text').innerHTML = "Красава";
             document.getElementById('control').remove();
+            keys = false;
         }else{
             document.getElementById('text').innerHTML = "Сгоняйка за пивком";
             box[3][width - 5].appendChild(beer);
@@ -116,6 +166,9 @@ function move(){
         img1.style.height = "100%";
     }
 }
+
+var created = false;
+var keys = true;
 
 var height = 10;
 var width = 15;
