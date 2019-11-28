@@ -123,14 +123,29 @@
     #wrapper #main{
         grid-template-columns: 200px 200px;
         grid-auto-rows: 200px;
-        grid-column-gap: 50px;
+        grid-column-gap: 30px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 425px){
+
+    #wrapper #header #header-text{
+        font-size: 20px;
+    }
+
+    #wrapper #header .button-grid{
+        font-size: 10px;
+    }
+
     #wrapper #main{
         width: 100%;
         padding: 10px;
+        grid-template-columns: minmax(140px, 195px) minmax(140px, 195px);
+        grid-auto-rows: minmax(140px, 195px);
         grid-gap: 10px;
+    }
+
+    #wrapper #main .content-box img{
+        width: 125px;
     }
 }
