@@ -126,3 +126,11 @@
         grid-column-gap: 50px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 425px){
+    #wrapper #main{
+        width: 100%;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+}
