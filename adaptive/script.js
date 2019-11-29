@@ -48,5 +48,5 @@ function changeFont(){
     }
 }
 
-var countColor = 0;
-var countFont = 0;
+var countColor = 1;
+var countFont = 1;
