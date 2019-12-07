@@ -24,6 +24,8 @@ a:hover{
     background-color: #515151;
     display: grid;
     justify-items: center;
+    -ms-display: grid;
+    -ms-justify-items: center;
 }
 
 #wrapper .main-box{
