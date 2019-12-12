@@ -4,3 +4,7 @@ function check() {
     let second = document.getElementsByTagName('textarea')[0];
     console.log("Comment: " + second.value);
 }
+
+let x = document.createElement('p');
+x.innerHTML = window.innerWidth;
+document.getElementById('wrapper').appendChild(x);
