@@ -218,6 +218,13 @@ a:hover{
     }
 
 }
+
+@media (max-width: 768px){
+	#wrapper #footer{
+		font-size: 10px;
+	}
+}
+	
 .topheader{
     display: -webkit-box;
     display: -ms-flexbox;
