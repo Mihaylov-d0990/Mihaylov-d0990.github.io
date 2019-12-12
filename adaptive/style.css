@@ -181,6 +181,7 @@ a:hover{
     }
 
     #wrapper #description{
+	grid-gap: 0px;
         padding: 0px;
     }
 
