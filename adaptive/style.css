@@ -195,8 +195,8 @@ a:hover{
     #wrapper #projects{
         -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
-        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto;
         padding: 16px;
         grid-gap: 16px;
     }
@@ -224,7 +224,7 @@ a:hover{
 		font-size: 10px;
 	}
 }
-	
+
 .topheader{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,4 +233,3 @@ a:hover{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
-	
