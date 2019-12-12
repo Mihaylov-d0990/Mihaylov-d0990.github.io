@@ -181,7 +181,7 @@ a:hover{
     }
 
     #wrapper #description{
-        
+        padding: 16px;
     }
 
     #wrapper #description #description-image img{
