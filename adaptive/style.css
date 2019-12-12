@@ -182,7 +182,7 @@ a:hover{
 
     #wrapper #description{
 	grid-gap: 0px;
-        padding: 0px;
+        padding: 16px;
     }
 
     #wrapper #description #description-image img{
