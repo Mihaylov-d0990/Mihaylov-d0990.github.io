@@ -15,13 +15,13 @@
                     <h1>Ocean Whale</h1>
                 </div>
                 <div>
-                    <a href="#description">О нас</a>
+                    <a id="map-description" href="#description">О нас</a>
                 </div>
                 <div>
-                    <a href="#projects">Проекты</a>
+                    <a id="map-projects" href="#projects">Проекты</a>
                 </div>
                 <div>
-                    <a href="#feedback">Связь с нами</a>
+                    <a id="map-feedback" href="#feedback">Связь с нами</a>
                 </div>
             </div>
             <div id="description" class="main-box">
@@ -86,13 +86,13 @@
                 </div>
                 <form>
                     <div class="form-box">
-                        <span>Введите вашу почту</span><br><input type="email"><br>
+                        <span>Введите вашу почту</span><br><input name="email" type="email"><br>
                     </div>
                     <div class="form-box">
-                        <span>Введите ваш коментарий</span><br><textarea name="name" rows="8" cols="80" contenteditable="false"></textarea>
+                        <span>Введите ваш коментарий</span><br><textarea name="mes" rows="8" cols="80" contenteditable="false"></textarea>
                     </div>
                     <div class="form-box">
-                        <input type="button" onclick="check()" value="Отправить" id="send-button">
+                        <input type="submit" onclick="check()" value="Отправить" id="send-button">
                     </div>
                 </form>
             </div>
