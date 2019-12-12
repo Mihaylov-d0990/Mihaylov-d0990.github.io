@@ -175,16 +175,13 @@ a:hover{
         margin-bottom: 10px;
         border: 3px solid #272727;
     }
-}
-
-@media (max-width: 425px) {
 
     #wrapper .main-box{
         width: 100%;
     }
 
     #wrapper #description{
-        padding: 16px;
+        
     }
 
     #wrapper #description #description-image img{
