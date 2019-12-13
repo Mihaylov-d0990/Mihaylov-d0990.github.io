@@ -13,13 +13,16 @@ function myFunction(x) {
     let a = document.getElementById('map-description');
     let p = document.getElementById('map-projects');
     let f = document.getElementById('map-feedback');
-    if (x.matches) { // If media query matches
+    let c = document.getElementById('map-check');
+    if (x.matches) {
         a.innerHTML = "A";
         a.style.fontSize = "30px";
         p.innerHTML = "G";
         p.style.fontSize = "30px";
         f.innerHTML = "?";
         f.style.fontSize = "30px";
+        c.innerHTML = "C";
+        c.style.fontSize = "30px";
     } else {
         a.innerHTML = "О нас";
         a.style.fontSize = "inherit";
@@ -27,6 +30,8 @@ function myFunction(x) {
         p.style.fontSize = "inherit";
         f.innerHTML = "Связь с нами";
         f.style.fontSize = "inherit";
+        c.innerHTML = "Проверка";
+        c.style.fontSize = "inherit";
     }
 }
 
