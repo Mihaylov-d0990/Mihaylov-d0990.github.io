@@ -39,8 +39,8 @@ a:hover{
     height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     -webkit-box-align: center;
@@ -50,7 +50,7 @@ a:hover{
 }
 
 #wrapper #header #logo{
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 
 #wrapper #description{
