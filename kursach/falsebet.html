@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>FalseBet</title>
+</head>
+
+<body ng-app="myApp" ng-controller="customersCtrl" onload="sliderSwipe('auto');">
+    <div id="wrapper">
+        <div id="fake-header"></div>
+        <div id="header" class="light-text">
+            <a id="history-data-container" class="header-link" href="#">
+                <div id="history-link" class="header-element">
+                    <h3>История</h3>
+                </div>
+            </a>
+            <a class="header-link" href="#">
+                <div id="logo-link" onclick="goMain();">
+                    <h1>FalseBet</h1>
+                </div>
+            </a>
+            <div id="profile-data-container" style="grid-template-columns: 1fr 1fr;">
+                <div id="account-info">
+                    <p id="profile-data"></p>
+                </div>
+                <a class="header-link" href="#">
+                    <div id="profile-link" class="header-element" onclick="goProfile();">
+                        <h3>Профиль</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="fake-right-side">
+            <div id="enter-block" style="box-shadow: 0px 5px 15px black;">
+                <div class="enter-block-element light-text">
+                    <p>Логин</p>
+                </div>
+                <div class="enter-block-element">
+                    <input type="text" id="login-input" name="" value="">
+                </div>
+                <div class="enter-block-element light-text">
+                    <p>Пароль</p>
+                </div>
+                <div class="enter-block-element">
+                    <input type="text" id="password-input" name="" value="">
+                </div>
+                <div class="enter-block-element">
+                    <button type="button" name="button" onclick="login();">Вход</button>
+                </div>
+                <div class="enter-block-element" style="justify-self: end;">
+                    <a id="registration-link" href="#">Регистрация</a>
+                </div>
+            </div>
+            <div id="exit-block" class="light-text" onclick="logout();" style="box-shadow: 0px 5px 15px black;">
+                <p>Выход</p>
+            </div>
+        </div>
+        <div id="main">
+            <div id="left-side-of-main" class="light-text"></div>
+            <div id="center-of-main" class="light-text" style="box-shadow: 0px 5px 65px black;">
+                <div id="major-page">
+                    <div id="slider" style="height: 450px; padding: 5px; background-color: white;">
+                        <div class="slider-element" ng-repeat="l in links" style="width: 100%; background-image: url({{l}}); transition: 1s; background-position: center; background-size: cover; height: 0px;"></div>
+                        <div class="slider-controller" style="left: 5px; background-image: url('https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_960_720.png');" onclick="sliderSwipe('left');"></div>
+                        <div class="slider-controller" style="right: 5px; background-image: url('https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646214_960_720.png');" onclick="sliderSwipe('right');"></div>
+                    </div>
+                    <div class="lil-info-block" ng-repeat="s in sport" style="background-image: url({{s.site}}); background-position: center; background-size: cover;">
+                        <p style="color: black; background: white;">{{s.name}}</p>
+                    </div>
+                </div>
+                <div id="profile-page" style="background-color: white;">
+                    <div class="profile-element">
+                        <p>ID</p>
+                        <p id="id-info"></p>
+                    </div>
+                    <div class="profile-element">
+                        <p>Логин</p>
+                        <p id="login-info"></p>
+                    </div>
+                    <div class="profile-element">
+                        <p>Пароль</p>
+                        <p id="password-info"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-side-of-main" class="light-text"></div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>

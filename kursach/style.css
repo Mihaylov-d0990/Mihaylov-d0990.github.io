@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper{
+    background-color: #BCBCBC;
+}
+
+#wrapper #fake-right-side{
+    display: grid;
+    align-items: start;
+    align-content: start;
+    justify-self: end;
+    position: fixed;
+    right: 0;
+    padding: 25px;
+}
+
+#wrapper #fake-right-side #enter-block{
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 15px;
+    justify-self: center;
+    display: grid;
+}
+
+#wrapper #fake-right-side #enter-block .enter-block-element{
+    padding: 15px;
+}
+
+#wrapper #fake-right-side #enter-block .enter-block-element #registration-link{
+    color: white;
+}
+
+#wrapper #fake-right-side #enter-block .enter-block-element #registration-link:link{
+    color: white;
+}
+
+#wrapper #fake-right-side #enter-block .enter-block-element #registration-link:visited{
+    color: white;
+}
+
+#wrapper #fake-right-side #enter-block .enter-block-element #registration-link:active{
+    color: white;
+}
+
+#wrapper #fake-right-side #exit-block{
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 15px;
+    justify-self: center;
+}
+
+#wrapper #fake-right-side #exit-block:hover{
+    background-color: #2A2A2A;
+    cursor: pointer;
+}
+
+#wrapper #header{
+    box-sizing: border-box;
+    background-color: #242424;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#wrapper #header .header-link{
+    text-decoration: none;
+}
+
+#wrapper #header .header-link:link{
+    color: white;
+}
+
+#wrapper #header .header-link:visited{
+    color: white;
+}
+
+#wrapper #header .header-link:active{
+    color: white;
+}
+
+#wrapper #header .header-element, #wrapper #header #account-info{
+    border-radius: 5px;
+}
+
+#wrapper #header .header-element:hover{
+    background-color: #2A2A2A;
+}
+
+#wrapper #main{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+#wrapper #main #center-of-main{
+    background-color: #242424;
+}
+
+#wrapper #main #center-of-main #major-page #slider{
+    position: relative;
+    z-index: 0;
+}
+
+#wrapper #main #center-of-main #major-page #slider .slider-controller{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 25px);
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#wrapper #main #center-of-main #profile-page{
+    padding: 10px;
+}
+
+#wrapper #main #center-of-main #profile-page .profile-element{
+    background-color: #242424;
+    padding: 10px;
+}
+
+#wrapper #footer{
+    background-color: #242424;
+    padding: 25px;
+}
+
+.light-text{
+    color: white;
+}
+
+.lil-info-block{
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 5px;
+    height: 60px;
+    transition: 1s
+}
+
+.lil-info-block:hover{
+    height: 500px;
+    transition: 1s
+}
