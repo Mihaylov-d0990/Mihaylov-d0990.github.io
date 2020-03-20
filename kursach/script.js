@@ -2,7 +2,7 @@ var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     
     $http.get("jsonFiles/slider.json").then(function (response) {
-        $scope.sport = response.data;
+        $scope.slider = response.data;
     });
     
     $http.get("jsonFiles/sport.json").then(function (response) {
