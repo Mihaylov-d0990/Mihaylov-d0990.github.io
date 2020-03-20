@@ -1,11 +1,10 @@
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-    $scope.links = ["https://avatars.mds.yandex.net/get-zen_doc/1337093/pub_5bdf43d594c14900aa52a124_5bdf47fcb327ef00a9375a32/scale_1200",
-                    "https://avatars.mds.yandex.net/get-zen_doc/1790220/pub_5c8b9b8ab1d4aa00b363df08_5c8b9b9073174100b4cfd164/scale_1200",
-                    "https://s.yimg.com/uu/api/res/1.2/mXAPys24K6dRVqEm5PfPIA--~B/aD0zNDEwO3c9NTExNTtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-images/2019-09/46a9ae60-d1b2-11e9-af9f-9f7886e13c82",
-                    "https://focus.ua/storage/pub/images/2015/0326614_hc-mike-tyson-pg-20140114-034.jpg",
-                    "https://s.yimg.com/uu/api/res/1.2/MPJnFysCXBkFZqaYEl5aLA--~B/aD0zMDc3O3c9NDYxNjtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/9339f60e0e8869fefc6f4bb151f5991b"];
-
+    
+    $http.get("jsonFiles/slider.json").then(function (response) {
+        $scope.sport = response.data;
+    });
+    
     $http.get("jsonFiles/sport.json").then(function (response) {
         $scope.sport = response.data;
     });
@@ -14,6 +13,7 @@ app.controller('customersCtrl', function($scope, $http) {
         $scope.accounts = response.data;
         temp = $scope.accounts;
     });
+    
 });
 
 document.getElementById('fake-header').style.height = document.getElementById('header').clientHeight + "px";
