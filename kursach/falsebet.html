@@ -65,7 +65,7 @@
             <div id="center-of-main" class="light-text" style="box-shadow: 0px 5px 65px black;">
                 <div id="major-page">
                     <div id="slider" style="height: 450px; padding: 5px; background-color: white;">
-                        <div class="slider-element" ng-repeat="l in links" style="width: 100%; background-image: url({{l}}); transition: 1s; background-position: center; background-size: cover; height: 0px;"></div>
+                        <div class="slider-element" ng-repeat="s in slider" style="width: 100%; background-image: url(images/slider/{{s.link}}); transition: 1s; background-position: center; background-size: cover; height: 0px;"></div>
                         <div class="slider-controller" style="left: 5px; background-image: url('https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_960_720.png');" onclick="sliderSwipe('left');"></div>
                         <div class="slider-controller" style="right: 5px; background-image: url('https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646214_960_720.png');" onclick="sliderSwipe('right');"></div>
                     </div>
